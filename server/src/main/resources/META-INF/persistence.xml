@@ -5,19 +5,19 @@
              version="3.0">
     <persistence-unit name="default">
 
-        <class>com.pizzadelivery.server.data.entities.Car</class>
-        <class>com.pizzadelivery.server.data.entities.Allergy</class>
-        <class>com.pizzadelivery.server.data.entities.CarIngredient</class>
-        <class>com.pizzadelivery.server.data.entities.Edge</class>
-        <class>com.pizzadelivery.server.data.entities.FoodOrder</class>
-        <class>com.pizzadelivery.server.data.entities.Ingredient</class>
-        <class>com.pizzadelivery.server.data.entities.Inventory</class>
-        <class>com.pizzadelivery.server.data.entities.Map</class>
-        <class>com.pizzadelivery.server.data.entities.Menu</class>
-        <class>com.pizzadelivery.server.data.entities.MenuIngredient</class>
-        <class>com.pizzadelivery.server.data.entities.Role</class>
-        <class>com.pizzadelivery.server.data.entities.StreetName</class>
-        <class>com.pizzadelivery.server.data.entities.User</class>
-        <class>com.pizzadelivery.server.data.entities.OrderDelivery</class>
+        <class>com.navutil.server.data.entities.Car</class>
+        <class>com.navutil.server.data.entities.Allergy</class>
+        <class>com.navutil.server.data.entities.CarIngredient</class>
+        <class>com.navutil.server.data.entities.Edge</class>
+        <class>com.navutil.server.data.entities.FoodOrder</class>
+        <class>com.navutil.server.data.entities.Ingredient</class>
+        <class>com.navutil.server.data.entities.Inventory</class>
+        <class>com.navutil.server.data.entities.Map</class>
+        <class>com.navutil.server.data.entities.Menu</class>
+        <class>com.navutil.server.data.entities.MenuIngredient</class>
+        <class>com.navutil.server.data.entities.Role</class>
+        <class>com.navutil.server.data.entities.StreetName</class>
+        <class>com.navutil.server.data.entities.User</class>
+        <class>com.navutil.server.data.entities.OrderDelivery</class>
     </persistence-unit>
 </persistence>

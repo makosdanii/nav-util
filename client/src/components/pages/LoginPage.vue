@@ -14,8 +14,6 @@
                       label="Password" v-model="editedItem.password"
                       :error-messages="errors.password"/>
         <v-spacer/>
-        <v-btn class="mr-4 margin" v-if="orders.length" prepend-icon="mdi-cart"
-               @click="$router.push('/')"/>
         <v-btn :prepend-icon="name.length ? 'mdi-logout-variant' : 'mdi-login-variant'" class="mr-4 margin"
                color="primary"
                type="submit">
@@ -58,7 +56,7 @@ export default {
     }
   },
 
-  inject: ['login', 'logout', 'orders'],
+  inject: ['login', 'logout'],
 
   methods: {
     async save() {

@@ -14,11 +14,6 @@ export default {
     return {
       role: "",
       users: [],
-      roles: [],
-      allergies: [],
-      cars: [],
-      ingredients: [],
-      orders: [],
     }
   },
 
@@ -26,17 +21,7 @@ export default {
     return {
       role: computed(() => this.role),
       users: computed(() => this.users),
-      roles: computed(() => this.roles),
-      cars: computed(() => this.cars),
-      allergies: computed(() => this.allergies),
-      ingredients: computed(() => this.ingredients),
-      orders: computed(() => this.orders),
-      setOrders: (orders) => this.setOrders(orders),
       listUsers: this.listUsers,
-      listRoles: this.listRoles,
-      listCars: this.listCars,
-      listAllergies: this.listAllergies,
-      listIngredients: this.listIngredients,
       login: this.login,
       logout: this.logout,
     }
@@ -72,21 +57,6 @@ export default {
     },
     async listUsers() {
       await server.listUsers().then(promise => this.users = promise.data).catch((err) => console.log(err))
-    },
-    async listRoles() {
-      await server.listRoles().then(promise => this.roles = promise.data.filter(role => role.name !== 'admin')).catch((err) => console.log(err))
-    },
-    async listCars() {
-      await server.listCars().then(promise => this.cars = promise.data).catch((err) => console.log(err))
-    },
-    async listAllergies() {
-      await server.listAllergies().then(promise => this.allergies = promise.data).catch((err) => console.log(err))
-    },
-    async listIngredients() {
-      await server.listIngredients().then(promise => this.ingredients = promise.data.filter(ingredient => ingredient.name !== 'fuel')).catch((err) => console.log(err))
-    },
-    setOrders(orders) {
-      this.orders = orders
     }
   },
 }

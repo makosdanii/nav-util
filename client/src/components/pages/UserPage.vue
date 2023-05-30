@@ -26,24 +26,8 @@
                 label="Password"
                 :error-messages="errors.password"/>
           </v-col>
-          <v-col cols="12" sm="6" md="4">
-            <v-select
-                :items="roles"
-                item-title="name"
-                item-value="id"
-                label="Select"
-                name="roleByRoleId"
-                v-model="editedItem.roleByRoleId.id"
-                :error-messages="errors.roleByRoleId"
-            ></v-select>
-          </v-col>
         </v-row>
       </v-container>
-    </template>
-    <template #error><b>Users</b> should be unique by <b>email</b>. <br/> When deleting please make sure that it is
-      no
-      longer
-      referenced by any <b>cars</b>.
     </template>
   </DataTable>
 </template>
@@ -60,7 +44,7 @@ const defaultItem = {
   name: "",
   password: "",
   roleByRoleId: {
-    id: ""
+    id: 0
   },
 }
 
@@ -70,7 +54,7 @@ export default {
     DataTable
   },
 
-  inject: ['users', 'roles', 'listRoles', 'listUsers'],
+  inject: ['users', 'listUsers'],
 
   methods: {
     save() {
@@ -151,7 +135,6 @@ export default {
       headers: [
         {title: "Email", key: "email"},
         {title: "Name", key: "name"},
-        {title: "Role", key: "roleByRoleId.name"},
         {title: "Actions", key: "actions", sortable: false},
       ],
       editedItem: _.cloneDeep(defaultItem),
@@ -169,7 +152,6 @@ export default {
 
   async mounted() {
     await this.listUsers()
-    await this.listRoles()
   },
 };
 </script>
