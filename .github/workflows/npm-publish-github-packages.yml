@@ -21,6 +21,8 @@ jobs:
         working-directory: ./client
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
+      - run: git config --global user.email "makos.dani@gmail.com"
+      - run: git config --global user.name "makosdanii"
       - run: npm run deploy
         working-directory: ./client
         
