@@ -36,6 +36,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@makosdanii'
       - run: npm ci
+        working-directory: ./client
       - run: npm publish
+        working-directory: ./client
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_TO_PAGES}}
