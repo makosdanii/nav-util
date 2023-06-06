@@ -15,11 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: pwd
-      - run: cd client
-      - run: pwd
-      - run: cd ./client && npm install
-      - run: cd ./client && npm run build
+      - run: npm install
+      - run: npm run build
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
 
