@@ -3,8 +3,8 @@
     <LoginPage/>
     <MenuDrawer/>
     <v-main>
-      <v-container fluid style="position: relative">
-        <v-card class="overflow-hidden" style="position: relative">
+      <v-container fluid>
+        <v-card class="overflow-hidden" style="display: flex; flex-wrap: wrap;">
           <router-view/>
         </v-card>
       </v-container>

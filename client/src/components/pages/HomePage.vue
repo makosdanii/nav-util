@@ -1,13 +1,11 @@
 <template>
-  <h2>{{ welcome }}</h2>
+  <h2 class="margin" v-if="!role.length">Login first!</h2>
   <Map/>
   <v-snackbar v-model="snack" :color="color" :timeout="3000">{{ snackText }}</v-snackbar>
 </template>
 
 <script>
 import Map from "@/components/Map.vue";
-import server from "@/business/PizzaServerAPI.js"
-import _ from "lodash";
 
 export default {
   name: "HomePage",
@@ -20,11 +18,6 @@ export default {
       color: ""
     }
   },
-  computed: {
-    welcome() {
-      return this.role.length ? "Welcome back!" : "Login first!"
-    },
-  }
 }
 </script>
 

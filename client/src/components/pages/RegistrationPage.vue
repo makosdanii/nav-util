@@ -62,10 +62,10 @@ export default {
     };
   },
   mounted() {
-if (server.id())
-    server.findUser().then(promise => {
-      this.editedItem = {...promise.data, password: ''}
-    })
+    if (server.id())
+      server.findUser().then(promise => {
+        this.editedItem = {...promise.data, password: ''}
+      })
   },
   methods: {
     async save() {
@@ -87,6 +87,7 @@ if (server.id())
                 this.snackText = "Created"
                 this.color = "green"
                 this.snack = true
+                this.$router.push('/')
               }
             }).catch(err => {
           if (err.response.status === 400 || err.response.status === 401 || err.response.status === 404) {

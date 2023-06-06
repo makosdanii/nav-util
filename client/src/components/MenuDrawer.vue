@@ -13,7 +13,23 @@
         <v-list-item-title>Home</v-list-item-title>
       </v-list-item>
 
-      <v-divider v-if="role === 'admin'" class="mx-4" inset horizontal></v-divider>
+      <v-list-item
+          v-if="role === 'user'"
+          @click="$router.push('/markers')"
+          link
+          prepend-icon="mdi-map-marker"
+      >
+        <v-list-item-title>Markers</v-list-item-title>
+      </v-list-item>
+
+      <v-list-item
+          v-if="role === 'user'"
+          @click="$router.push('/routes')"
+          link
+          prepend-icon="mdi-navigation-variant"
+      >
+        <v-list-item-title>Routes</v-list-item-title>
+      </v-list-item>
 
       <v-list-item
           v-if="role"

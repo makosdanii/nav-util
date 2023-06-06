@@ -4,20 +4,9 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="default">
-
-        <class>com.navutil.server.data.entities.Car</class>
-        <class>com.navutil.server.data.entities.Allergy</class>
-        <class>com.navutil.server.data.entities.CarIngredient</class>
-        <class>com.navutil.server.data.entities.Edge</class>
-        <class>com.navutil.server.data.entities.FoodOrder</class>
-        <class>com.navutil.server.data.entities.Ingredient</class>
-        <class>com.navutil.server.data.entities.Inventory</class>
-        <class>com.navutil.server.data.entities.Map</class>
-        <class>com.navutil.server.data.entities.Menu</class>
-        <class>com.navutil.server.data.entities.MenuIngredient</class>
         <class>com.navutil.server.data.entities.Role</class>
-        <class>com.navutil.server.data.entities.StreetName</class>
         <class>com.navutil.server.data.entities.User</class>
-        <class>com.navutil.server.data.entities.OrderDelivery</class>
+        <class>com.navutil.server.data.entities.Marker</class>
+        <class>com.navutil.server.data.entities.Route</class>
     </persistence-unit>
 </persistence>

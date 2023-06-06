@@ -73,8 +73,11 @@
       </v-icon>
     </template>
 
-    <template v-slot:item.id="{item}">
-      <v-checkbox v-model="selected" :value="item.raw.id"/>
+    <template v-slot:item.idx="{item}">
+      <v-chip :color="chipColors[(item.raw.idx - 1) % chipColors.length]">{{
+          this.markerTitles[item.raw.idx - 1]
+        }}
+      </v-chip>
     </template>
 
     <template v-slot:expanded-row="{ item, columns }">
@@ -131,7 +134,7 @@ export default {
   },
 
   emits: ['save', 'edit', 'delete', 'cancel'],
-  inject: ['orders', 'setOrders', 'role'],
+  inject: ['role', 'markerTitles'],
 
   data() {
     return {
@@ -140,23 +143,17 @@ export default {
       snackText: "",
       search: '',
       color: '',
-      selected: []
+      selected: [],
+      chipColors: ['red',
+        'orange',
+        'blue',
+        'purple',
+        'pink',
+        'brown',
+        'violet',
+        'green']
     };
   },
-
-  //no differentiated logic needed since only used for menu
-  watch: {
-    selected: {
-      handler(newVal) {
-        this.setOrders(newVal)
-      },
-      deep: true
-    }
-  },
-
-  mounted() {
-    this.selected = this.orders
-  }
 };
 </script>
 <style>

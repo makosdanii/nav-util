@@ -10,6 +10,8 @@ import App from './App.vue'
 import HomePage from "@/components/pages/HomePage.vue";
 import UserPage from "@/components/pages/UserPage.vue";
 import RegistrationPage from "@/components/pages/RegistrationPage.vue";
+import MarkerPage from "@/components/pages/MarkerPage.vue";
+import RoutePage from "@/components/pages/RoutePage.vue";
 import _ from 'lodash';
 import server from "@/business/PizzaServerAPI.js";
 
@@ -23,7 +25,19 @@ const routes = [
     {path: '/user', component: RegistrationPage},
     {
         path: '/users', component: UserPage, beforeEnter: (to, from) => {
-            if (server.role() !== 'admin' && server.role() !== 'customer')
+            if (server.role() !== 'admin')
+                return '/'
+        }
+    },
+    {
+        path: '/markers', component: MarkerPage, beforeEnter: (to, from) => {
+            if (server.role() !== 'user')
+                return '/'
+        }
+    },
+    {
+        path: '/routes', component: RoutePage, beforeEnter: (to, from) => {
+            if (server.role() !== 'user')
                 return '/'
         }
     }

@@ -1,13 +1,10 @@
 package com.navutil.server.data.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.navutil.server.data.validation.NonValidatedOnPersistTime;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Null;
 
 import java.util.Collection;
 import java.util.Objects;
@@ -36,6 +33,10 @@ public class User {
     @NotNull
     @JoinColumn(name = "role_id", referencedColumnName = "id", nullable = false)
     private Role roleByRoleId;
+    @OneToMany(mappedBy = "userByUserId", orphanRemoval = true)
+    private Collection<Marker> markersById;
+    @OneToMany(mappedBy = "userByUserId", orphanRemoval = true)
+    private Collection<Route> routesById;
 
     public int getId() {
         return id;
@@ -82,13 +83,20 @@ public class User {
         return Objects.hash(id);
     }
 
-
     public Role getRoleByRoleId() {
         return roleByRoleId;
     }
 
     public void setRoleByRoleId(Role roleByRoleId) {
         this.roleByRoleId = roleByRoleId;
+    }
+
+    public Collection<Marker> getMarkersById() {
+        return markersById;
+    }
+
+    public Collection<Route> getRoutesById() {
+        return routesById;
     }
 
     public User() {

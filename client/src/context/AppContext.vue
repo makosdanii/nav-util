@@ -14,6 +14,8 @@ export default {
     return {
       role: "",
       users: [],
+      markers: [],
+      markerTitles: ['Hike', 'Sail', 'Bar', 'Selfie point', 'Beach', 'Hotel', 'Border', 'Trip', 'Miscellaneous', 'Lifeguard', 'Sunset', 'Pools', 'Travel agent', 'Auxiliaries', 'Camping', 'Tour Guide', 'Dockyard', 'Stargazing', 'Garage', 'Zoo', 'Airport', 'Underwear', 'Suburb', 'Theatre', 'Nightclub'],
     }
   },
 
@@ -21,7 +23,10 @@ export default {
     return {
       role: computed(() => this.role),
       users: computed(() => this.users),
+      markers: computed(() => this.markers),
+      markerTitles: this.markerTitles,
       listUsers: this.listUsers,
+      listMarkers: this.listMarkers,
       login: this.login,
       logout: this.logout,
     }
@@ -57,6 +62,9 @@ export default {
     },
     async listUsers() {
       await server.listUsers().then(promise => this.users = promise.data).catch((err) => console.log(err))
+    },
+    async listMarkers() {
+      await server.findUser().then(promise => this.markers = promise.data.markersById)
     }
   },
 }
