@@ -19,7 +19,7 @@ public class CorsRequestFilter extends OncePerRequestFilter {
             HttpServletResponse response,
             FilterChain filterChain) throws ServletException, IOException {
 
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5173");
+        response.setHeader("Access-Control-Allow-Origin", "https://makosdanii.github.io");
         response.setHeader("Access-Control-Allow-Credentials", "true");
 
         if (request.getMethod().equals("OPTIONS"))
