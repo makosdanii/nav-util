@@ -21,7 +21,9 @@ jobs:
         working-directory: ./client
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
-
+      - run: npm run deploy
+        working-directory: ./client
+        
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
