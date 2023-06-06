@@ -1,11 +1,14 @@
 {
-  "name": "client",
-  "version": "0.0.0",
+  "name": "@makosdanii/nav-util",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makosdanii/makosdanii.github.io.git"
+  },
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --force",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "$TOKEN vite --force",
+    "build": "$TOKEN vite build"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",

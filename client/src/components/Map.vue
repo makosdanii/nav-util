@@ -110,7 +110,7 @@ let markers = []
 let start = []
 let end = []
 
-const token = "pk.eyJ1IjoibWFrb3NkYW5paSIsImEiOiJjbGdhb21hNHQxMndwM2xwaWUxOXY0bGU5In0.QCQaAMl0L4JC4gkOyTBzAg"
+const token = process.env.TOKEN
 const url = 'mapbox://styles/mapbox/streets-v12'
 mapboxgl.accessToken = token
 let map = null
