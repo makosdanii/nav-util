@@ -15,8 +15,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+<<<<<<< HEAD
       - name: NPM Install & Build
         working-directory: ./client
+=======
+      - run: npm install
+      - run: npm run build
+>>>>>>> origin/main
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: | 
