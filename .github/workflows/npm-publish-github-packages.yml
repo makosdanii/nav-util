@@ -20,7 +20,6 @@ jobs:
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: | 
-        pwd
         npm install
         npm run build
 
