@@ -15,7 +15,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: NPM Install & Build
       - run: npm install
         working-directory: ./client
       - run: npm run build
