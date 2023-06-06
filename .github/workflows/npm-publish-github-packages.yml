@@ -5,7 +5,7 @@ name: Node.js Package
 
 on:
   release:
-    types: [published]
+    types: [push]
 
 jobs:
   build:
@@ -16,12 +16,12 @@ jobs:
         with:
           node-version: 16
       - name: NPM Install & Build
+      - run: npm install
+        working-directory: ./client
+      - run: npm run build
         working-directory: ./client
         env:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
-        run: | 
-        npm install
-        npm run build
 
   publish-gpr:
     needs: build
