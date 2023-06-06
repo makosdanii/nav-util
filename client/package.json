@@ -5,7 +5,6 @@
     "url": "https://github.com/makosdanii/makosdanii.github.io.git"
   },
   "version": "1.0.4",
-  "private": true,
   "scripts": {
     "dev": "vite --force",
     "build": "vite build"
