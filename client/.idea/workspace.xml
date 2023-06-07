@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c2608e4-fef0-42c8-a651-a31c20c54ed0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/marker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/marker_sprite.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/bin/nav_db.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685449221846</updated>
       <workItem from="1685449225311" duration="88568000" />
-      <workItem from="1686133999716" duration="3420000" />
+      <workItem from="1686133999716" duration="5066000" />
     </task>
     <servers />
   </component>
