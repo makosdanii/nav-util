@@ -34,4 +34,4 @@ jobs:
           context: .
           file: ./server/Dockerfile
           push: true
-          tags: nav-util
+          tags: ${{ secrets.DOCKER_USERNAME }}/nav-util
