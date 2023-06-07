@@ -97,6 +97,7 @@ import mapboxgl from 'mapbox-gl'
 import server from '@/business/PizzaServerAPI'
 import _ from 'lodash'
 import * as yup from "yup";
+import dotenv from 'dotenv';
 
 const editedItem = {
   name: "",
@@ -110,7 +111,7 @@ let markers = []
 let start = []
 let end = []
 
-const token = process.env.MAPBOX_ACCESS_TOKEN
+const token = "MAPBOX_API_TOKEN"
 console.log(token)
 const url = 'mapbox://styles/mapbox/streets-v12'
 mapboxgl.accessToken = token
