@@ -17,6 +17,6 @@ export default defineConfig({
         port: 5173,
     },
     define: {
-        "MAPBOX_API_TOKEN": process.env.MAPBOX_API_TOKEN
+        "MAPBOX_ACCESS_TOKEN": process.env.MAPBOX_ACCESS_TOKEN
     }
 })

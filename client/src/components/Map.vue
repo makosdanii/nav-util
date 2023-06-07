@@ -111,7 +111,7 @@ let markers = []
 let start = []
 let end = []
 
-const token = "MAPBOX_API_TOKEN"
+const token = "MAPBOX_ACCESS_TOKEN"
 console.log(token)
 const url = 'mapbox://styles/mapbox/streets-v12'
 mapboxgl.accessToken = token
