@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c2608e4-fef0-42c8-a651-a31c20c54ed0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/marker_sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\nav-util\client\public" />
       <recent name="E:\nav-util\client\src\components\pages" />
     </key>
   </component>
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685449221846</updated>
       <workItem from="1685449225311" duration="88568000" />
-      <workItem from="1686133999716" duration="459000" />
+      <workItem from="1686133999716" duration="932000" />
     </task>
     <servers />
   </component>
