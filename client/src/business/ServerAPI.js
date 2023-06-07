@@ -42,8 +42,9 @@ export default {
         const startX = BLOCK * ((idx - 1) % LENGTH) * -1
         const startY = BLOCK * Math.floor((idx - 1) / LENGTH) * -1
 
+        console.log(spriteImg)
         const sprite = document.createElement('img');
-        sprite.style.backgroundImage = spriteImg;
+        sprite.style.backgroundImage = `url(${spriteImg})`;
         sprite.style.backgroundPositionX = `${startX}px`;
         sprite.style.backgroundPositionY = `${startY}px`;
         sprite.style.width = `${BLOCK}px`;
