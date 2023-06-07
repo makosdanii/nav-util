@@ -23,7 +23,7 @@ jobs:
           TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
       - run: git config --global user.email makos.dani@gmail.com
       - run: git config --global user.name makosdanii
-      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/makosdanii/nav-util
+      - run: git remote set-url origin ssh://git@github.com/makosdanii/nav-util
       - run: npm run deploy
         working-directory: ./client
         
