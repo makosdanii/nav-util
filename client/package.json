@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "scripts": {
     "dev": "vite --force",
-    "build": "vite build",
+    "build": "MAPBOX_ACCESS_TOKEN=$MAPBOX_ACCESS_TOKEN vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
