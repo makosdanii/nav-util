@@ -1,7 +1,7 @@
 {
   "name": "@makosdanii/nav-util",
   "homepage": "https://makosdanii.github.io/nav-util/",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "scripts": {
     "dev": "vite --force",
     "build": "vite build",

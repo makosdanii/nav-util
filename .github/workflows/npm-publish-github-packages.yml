@@ -20,7 +20,7 @@ jobs:
       - run: npm run build
         working-directory: ./client
         env:
-          TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         
   publish-gpr:
     needs: build

@@ -40,7 +40,7 @@ jobs:
       - name: Build
         working-directory: ./client
         env:
-          TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
