@@ -1,5 +1,6 @@
 import axios from "axios";
 import VueCookies from 'vue-cookies';
+import spriteImg from '@/assets/marker_sprite.png'
 
 const SERVER_URL = "http://localhost:8081";
 // axios.defaults.withCredentials = true
@@ -41,12 +42,12 @@ export default {
         const startX = BLOCK * ((idx - 1) % LENGTH) * -1
         const startY = BLOCK * Math.floor((idx - 1) / LENGTH) * -1
 
-        const spriteImg = document.createElement('img');
-        spriteImg.style.backgroundImage = 'url(/nav-util/assets/marker_sprite.png)';
-        spriteImg.style.backgroundPositionX = `${startX}px`;
-        spriteImg.style.backgroundPositionY = `${startY}px`;
-        spriteImg.style.width = `${BLOCK}px`;
-        spriteImg.style.height = `${BLOCK}px`;
+        const sprite = document.createElement('img');
+        sprite.style.backgroundImage = spriteImg;
+        sprite.style.backgroundPositionX = `${startX}px`;
+        sprite.style.backgroundPositionY = `${startY}px`;
+        sprite.style.width = `${BLOCK}px`;
+        sprite.style.height = `${BLOCK}px`;
 
         return spriteImg;
     },

@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c2608e4-fef0-42c8-a651-a31c20c54ed0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/PizzaServerAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/ServerAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/ServerAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/ServerAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LoginPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/MarkerPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/MarkerPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/RegistrationPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/RegistrationPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/RoutePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/RoutePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/UserPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/UserPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/AppContext.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AppContext.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685449221846</updated>
       <workItem from="1685449225311" duration="88568000" />
-      <workItem from="1686133999716" duration="1531000" />
+      <workItem from="1686133999716" duration="2259000" />
     </task>
     <servers />
   </component>

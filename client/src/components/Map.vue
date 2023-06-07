@@ -97,6 +97,8 @@ import mapboxgl from 'mapbox-gl'
 import server from '@/business/ServerAPI'
 import _ from 'lodash'
 import * as yup from "yup";
+import markerImg from '@/assets/marker.png';
+import spriteImg from '@/assets/marker_sprite.png'
 
 const editedItem = {
   name: "",
@@ -253,32 +255,32 @@ export default {
       const MARKER_SIZE = 416
 
       await this.listMarkers()
-      this.markers.forEach(marker => {
-        const startX = BLOCK * ((marker.idx - 1) % LENGTH)
-        const startY = BLOCK * Math.floor((marker.idx - 1) / LENGTH)
+      this.markers.forEach(item => {
+        const startX = BLOCK * ((item.idx - 1) % LENGTH)
+        const startY = BLOCK * Math.floor((item.idx - 1) / LENGTH)
 
-        const spriteImg = new Image();
-        const markerImg = new Image();
+        const sprite = new Image();
+        const marker = new Image();
 
         const canvas = document.createElement("canvas")
         canvas.width = MARKER_SIZE;
         canvas.height = MARKER_SIZE;
         const canvasContext = canvas.getContext('2d');
-        markerImg.onload = function () {
-          canvasContext.drawImage(markerImg, 0, 0);
-          spriteImg.onload = function () {
-            canvasContext.drawImage(spriteImg, startX, startY, BLOCK, BLOCK, 184, 80, BLOCK, BLOCK)
+        marker.onload = function () {
+          canvasContext.drawImage(marker, 0, 0);
+          sprite.onload = function () {
+            canvasContext.drawImage(sprite, startX, startY, BLOCK, BLOCK, 184, 80, BLOCK, BLOCK)
 
             const newMarker = new mapboxgl.Marker({element: canvas})
-                .setLngLat([marker.lng, marker.lat])
+                .setLngLat([item.lng, item.lat])
             if (!markers.includes(newMarker)) {
               newMarker.addTo(map);
               markers.push(newMarker)
             }
           }
-          spriteImg.src = '/nav-util/assets/marker_sprite.png';
+          sprite.src = spriteImg;
         }
-        markerImg.src = '/nav-util/assets/marker.png';
+        marker.src = markerImg;
 
       })
     },
