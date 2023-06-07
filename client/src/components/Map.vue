@@ -112,7 +112,6 @@ let start = []
 let end = []
 
 const token = "MAPBOX_ACCESS_TOKEN"
-console.log(token)
 const url = 'mapbox://styles/mapbox/streets-v12'
 mapboxgl.accessToken = token
 let map = null
@@ -278,9 +277,9 @@ export default {
               markers.push(newMarker)
             }
           }
-          spriteImg.src = 'src/assets/marker_sprite.png';
+          spriteImg.src = './assets/marker_sprite.png';
         }
-        markerImg.src = 'src/assets/marker.png';
+        markerImg.src = './assets/marker.png';
 
       })
     },
