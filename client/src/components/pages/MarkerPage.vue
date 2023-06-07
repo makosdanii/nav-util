@@ -47,7 +47,7 @@
 <script>
 import _ from "lodash";
 import * as yup from "yup";
-import server from "@/business/PizzaServerAPI";
+import server from "@/business/ServerAPI";
 import DataTable from "@/components/DataTable.vue";
 
 const defaultItem = {

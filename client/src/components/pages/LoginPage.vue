@@ -32,7 +32,7 @@
 <script>
 import * as yup from 'yup';
 import _ from "lodash";
-import server from "@/business/PizzaServerAPI.js";
+import server from "@/business/ServerAPI.js";
 
 const defaultItem = {
   email: "",

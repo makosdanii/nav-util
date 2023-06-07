@@ -25,7 +25,7 @@
 
 <script>
 import _ from 'lodash'
-import server from "@/business/PizzaServerAPI";
+import server from "@/business/ServerAPI";
 import DataTable from "@/components/DataTable.vue";
 import RouteExpandItem from "@/components/RouteExpandItem.vue";
 

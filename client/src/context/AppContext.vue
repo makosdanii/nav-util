@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import server from "../business/PizzaServerAPI.js";
+import server from "../business/ServerAPI.js";
 import {computed} from "vue";
 
 export default {

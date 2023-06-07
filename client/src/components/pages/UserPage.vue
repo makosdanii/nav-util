@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import server from "../../business/PizzaServerAPI.js";
+import server from "../../business/ServerAPI.js";
 import DataTable from "../DataTable.vue";
 import * as yup from "yup";
 import _ from "lodash";

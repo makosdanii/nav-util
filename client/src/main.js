@@ -13,7 +13,7 @@ import RegistrationPage from "@/components/pages/RegistrationPage.vue";
 import MarkerPage from "@/components/pages/MarkerPage.vue";
 import RoutePage from "@/components/pages/RoutePage.vue";
 import _ from 'lodash';
-import server from "@/business/PizzaServerAPI.js";
+import server from "@/business/ServerAPI.js";
 
 import 'vuetify/styles'
 import './assets/main.css'

@@ -94,7 +94,7 @@
 </template>
 <script>
 import mapboxgl from 'mapbox-gl'
-import server from '@/business/PizzaServerAPI'
+import server from '@/business/ServerAPI'
 import _ from 'lodash'
 import * as yup from "yup";
 
@@ -276,9 +276,9 @@ export default {
               markers.push(newMarker)
             }
           }
-          spriteImg.src = '/assets/marker_sprite.png';
+          spriteImg.src = '/nav-util/assets/marker_sprite.png';
         }
-        markerImg.src = '/assets/marker.png';
+        markerImg.src = '/nav-util/assets/marker.png';
 
       })
     },

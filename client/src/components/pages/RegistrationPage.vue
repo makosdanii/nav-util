@@ -33,7 +33,7 @@
 <script>
 import _ from "lodash";
 import * as yup from "yup";
-import server from "@/business/PizzaServerAPI";
+import server from "@/business/ServerAPI";
 
 const defaultItem = {
   id: 0,
