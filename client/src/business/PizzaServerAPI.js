@@ -42,7 +42,7 @@ export default {
         const startY = BLOCK * Math.floor((idx - 1) / LENGTH) * -1
 
         const spriteImg = document.createElement('img');
-        spriteImg.style.backgroundImage = 'url(./assets/marker_sprite.png)';
+        spriteImg.style.backgroundImage = 'url(/assets/marker_sprite.png)';
         spriteImg.style.backgroundPositionX = `${startX}px`;
         spriteImg.style.backgroundPositionY = `${startY}px`;
         spriteImg.style.width = `${BLOCK}px`;
